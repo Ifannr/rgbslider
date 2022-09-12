@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGB SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #eaeaea;">
+    <div class="container mt-5">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center" id="bg" style="height: 15rem; background-color: #fff; border-radius: 2rem;">
+                <h1>
+                    <span>rgb(</span>
+                    <output id="hexVal" class="hexvalue d-none">#000000</output> 
+                    <output for="r" id="outputR">0</output>, 
+                    <output for="g" id="outputG">0</output>, 
+                    <output for="b" id="outputB">0</output>
+                    <span>)</span>
+                </h1>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <input type="range" class="slider" min="0" max="255" id="r" step="1" value="0">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <input type="range" class="slider" min="0" max="255" id="g" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <input type="range" class="slider" min="0" max="255" id="b" step="1" value="0">
+                </div>
+            </div>
+        </div>
+       
+       
+      <script  src="function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
